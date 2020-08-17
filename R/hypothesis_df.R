@@ -3,12 +3,12 @@
 #' Evaluate a non-linear hypothesis using Savage-Dickey method with data frame.
 #' @param h A hypothesis to evaluate, in string form.
 #' @param x A data frame containing necessary values for hypothesis to be evaluated. Note that this dataframe must contain both prior data and true data for evaluation to be effective.
-#' @param class The class of predictors with which the hypothesis will evaluate.
+#' @param class The class of predictors with which the hypothesis will evaluate. Default is b.
 #' @param alpha Alpha values used for hypothesis test.
 #' @import tidyverse, mgsub
 #' @export
 
-hypothesis_df <- function (h, x, class, alpha, name = NULL) {
+hypothesis_df <- function (h, x, class = "b", alpha, name = NULL) {
     require('tidyverse')
     require('mgsub')
 

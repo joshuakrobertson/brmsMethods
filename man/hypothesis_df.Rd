@@ -4,14 +4,14 @@
 \alias{hypothesis_df}
 \title{brmsMethod: hypothesis_df}
 \usage{
-hypothesis_df(h, x, class, alpha, name = NULL)
+hypothesis_df(h, x, class = "b", alpha, name = NULL)
 }
 \arguments{
 \item{h}{A hypothesis to evaluate, in string form.}
 
 \item{x}{A data frame containing necessary values for hypothesis to be evaluated. Note that this dataframe must contain both prior data and true data for evaluation to be effective.}
 
-\item{class}{The class of predictors with which the hypothesis will evaluate.}
+\item{class}{The class of predictors with which the hypothesis will evaluate. Default is b.}
 
 \item{alpha}{Alpha values used for hypothesis test.}
 }
